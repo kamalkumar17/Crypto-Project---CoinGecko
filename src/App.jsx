@@ -1,15 +1,18 @@
+// import { useState } from "react";
 import "./App.css";
-import Banner from "./Components/Banner/Banner";
-import CoinTable from "./Components/CoinTable/CoinTable";
-import Navbar from "./Components/Navbar/Navbar";
+import Home from "./Pages/Home";
+// import { Currencycontext } from "./context/CurrencyContext";
 
 function App() {
+  // const [currency, setCurrency] = useState('usd');
   return (
     <>
-      <Navbar />
-      <Banner/>
-      <CoinTable />
+      {/* <Currencycontext.Provider value={{currency,setCurrency}}> */}
+        <Home />
+      {/* </Currencycontext.Provider> */}
     </>
   )
+
 }
+
 export default App;
